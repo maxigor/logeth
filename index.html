@@ -130,12 +130,12 @@
       const resp = await contract.methods.owner().call({
         from: window.userAddress })
 
-      const symbol = await contract.methods.symbol().call({
+      const ramppaddress = await contract.methods.RAMPPADDRESS().call({
         from: window.userAddress })
 
 
       console.log('O Dono do contrato é : ' + resp);
-      console.log('Symbol do contrato :' + symbol)
+      console.log('Ramp address do contrato : ' + ramppaddress)
 
     }
 
